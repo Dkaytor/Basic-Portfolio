@@ -1,0 +1,55 @@
+/**
+ * Absolute Position: anchors element to the first element (overall box)
+ **/
+
+.fixed {
+    position:fixed;
+    right:-50px;
+}
+ 
+ 
+ <div id=“relative”>
+       &lt;div&gt;<br> position: relative
+
+       <!-- a div positioned absolutely in the relative div -->
+       <div id=“absolute”>
+         &lt;div&gt;<br> position: absolute
+       </div>
+     </div>
+ 
+ 
+.box-set {
+  position: fixed;
+  height: 400px;
+  background:#eee;
+}
+
+.box {
+  /* Absolute Position */
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: #eee;
+  border: 2px solid black;
+}
+
+/* Box rules: percentages define anchors (i.e. position of each box relative to enclosing box) */
+
+.box-1 {
+  position:relative;
+  text-align: center;
+}
+
+.box-2 {
+  top: 0;
+  right: -40px;
+}
+
+.box-3 {
+  right: 20px;
+  bottom: -10px;
+}
+
+.box-4 {
+  bottom: 0;
+}
